@@ -1,0 +1,17 @@
+form {
+  display: block;
+  text-align: center;
+  margin: 35pt auto;
+}
+
+.form-item {
+  margin: 10pt auto;
+}
+
+.save-button {
+  color: white;
+  background-color: #4472c4;
+  border: solid 1px #4472c4;
+  border-radius: 8pt;
+  padding: 8px 12px;
+}
