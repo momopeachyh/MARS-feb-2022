@@ -24,3 +24,17 @@ function calculateDifference(event) {
 
 let subtractionEquals = document.querySelector("#subtractionEquals");
 subtractionEquals.addEventListener("click", calculateDifference);
+
+/*Multiplication function */
+function calculateProduct(event) {
+  event.preventDefault();
+  let multiplication1 = document.querySelector("#multiplication1");
+  let multiplication2 = document.querySelector("#multiplication2");
+  let multiplicationAnswer =
+    Number(multiplication1.value) * Number(multiplication2.value);
+  let product = document.querySelector("#product");
+  product.value = multiplicationAnswer;
+}
+
+let multiplicationEquals = document.querySelector("#multiplicationEquals");
+multiplicationEquals.addEventListener("click", calculateProduct);
