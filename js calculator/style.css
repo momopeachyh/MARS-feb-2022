@@ -1,0 +1,25 @@
+.calculator-wrapper {
+  border: 1px solid black;
+  border-radius: 5px;
+  display: block;
+  margin: 50px auto;
+  max-width: 550px;
+  padding: 2em;
+}
+
+.header,
+.operation {
+  text-align: center;
+}
+
+.subtraction,
+.multiplication,
+.division {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
+}
+
+.button {
+  width: 2em;
+}

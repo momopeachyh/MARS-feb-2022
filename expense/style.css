@@ -1,11 +1,10 @@
 form {
-  display: block;
+  margin: 35px auto;
   text-align: center;
-  margin: 35pt auto;
 }
 
-.form-item {
-  margin: 10pt auto;
+td {
+  padding: 8px;
 }
 
 .save-button {

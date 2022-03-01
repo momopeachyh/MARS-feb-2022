@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interest Survey</title>
+</head>
+
+<body>
+  <h1>Employee Interests Survey</h1>
+  <form>
+    <table>
+      <tr>
+        <td><label for="name">Enter your name</label></td>
+        <td><input type="text" name="name" id="name"></td>
+      </tr>
+      <tr>
+        <td><label for="department">Enter your department</label></td>
+        <td><input type="text" name="department" id="department"></td>
+      </tr>
+      <tr>
+        <td><label for="employeeBackground">Tell us a bit about yourself</label></td>
+        <td><textarea name="background" id="background"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="exercise">Do you exercise at home?</label></td>
+        <td><input type="radio" id="yes" name="exercise" value="yes"><label for="yes">Yes</label><input type="radio"
+            id="no" name="exercise" value="no"><label for="no">No</label></td>
+      </tr>
+      <tr>
+        <td><label for="news">How do you like to read about your favorite topics?</label></td>
+        <td><input type="checkbox" id="books" name="news" value="books"><label for="news">Books</label></td>
+        <td><input type="checkbox" id="onlineResources" name="news" value="onlineResources"><label for="news">Online
+            Resources</label></td>
+        <td><input type="checkbox" id="phoneApps" name="news" value="phoneApps"><label for="news">Phone Apps</label>
+        </td>
+        <td><input type="checkbox" id="magazines" name="magazines" value="magazines"><label for="news">Magazines</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="genre">What genre of movies do you like?</label>
+          <select name="genre" id="genre">
+            <option value="">Please choose an option</option>
+            <option value="comedy">comedy</option>
+            <option value="horror">horror</option>
+            <option value="drama">drama</option>
+            <option value="romance">romance</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="submit" value="Submit"></td>
+        <td><input type="submit" value="Reset"></td>
+      </tr>
+
+    </table>
+  </form>
+</body>
+
+</html>
