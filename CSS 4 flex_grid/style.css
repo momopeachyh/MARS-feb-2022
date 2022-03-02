@@ -1,0 +1,32 @@
+.green {
+  background-color: #baffc9;
+}
+
+.yellow {
+  background-color: #ffffba;
+}
+
+.red {
+  background-color: #ffb3ba;
+}
+
+.yellow,
+.red {
+  display: flex;
+}
+
+.blue {
+  background-color: #bbe1ff;
+  max-width: 20%;
+}
+
+.orange {
+  background-color: #ffdfba;
+}
+
+.numbers,
+.letters {
+  background-color: white;
+  margin: 5px;
+  padding: 10px 30px;
+}
