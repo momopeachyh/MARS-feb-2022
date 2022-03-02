@@ -38,3 +38,16 @@ function calculateProduct(event) {
 
 let multiplicationEquals = document.querySelector("#multiplicationEquals");
 multiplicationEquals.addEventListener("click", calculateProduct);
+
+/*Division function */
+function calculateQuotient(event) {
+  event.preventDefault();
+  let division1 = document.querySelector("#division1");
+  let division2 = document.querySelector("#division2");
+  let divisionAnswer = Number(division1.value) / Number(division2.value);
+  let quotient = document.querySelector("#quotient");
+  quotient.value = divisionAnswer;
+}
+
+let divisionEquals = document.querySelector("#divisionEquals");
+divisionEquals.addEventListener("click", calculateQuotient);

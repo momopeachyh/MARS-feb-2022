@@ -5,11 +5,13 @@
   margin: 50px auto;
   max-width: 550px;
   padding: 2em;
+  text-align: center;
 }
 
-.header,
 .operation {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
 }
 
 .subtraction,
@@ -20,6 +22,22 @@
   margin-top: 1.5em;
 }
 
+.operator,
 .button {
-  width: 2em;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 1px 8px;
+  width: 0.8em;
+}
+
+.button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 2.4em;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 2px;
 }
