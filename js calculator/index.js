@@ -5,9 +5,10 @@ function calculateSum(event) {
   let addition2 = document.querySelector("#addition2");
   let additionAnswer = Number(addition1.value) + Number(addition2.value);
   let sum = document.querySelector("#sum");
-  sum.value = additionAnswer;
 
-  if (addition1.value == "" || addition2.value == "") {
+  if (addition1.value.length >= 1 && addition2.value.length >= 1) {
+    sum.value = additionAnswer;
+  } else if (addition1.value == "" || addition2.value == "") {
     alert("Please enter the missing value.");
   }
 }
@@ -23,9 +24,10 @@ function calculateDifference(event) {
   let subtractionAnswer =
     Number(subtraction1.value) - Number(subtraction2.value);
   let difference = document.querySelector("#difference");
-  difference.value = subtractionAnswer;
 
-  if (subtraction1.value == "" || subtraction2.value == "") {
+  if (subtraction1.value.length >= 1 && subtraction2.value.length >= 1) {
+    difference.value = subtractionAnswer;
+  } else if (subtraction1.value == "" || subtraction2.value == "") {
     alert("Please enter the missing value.");
   }
 }
@@ -41,9 +43,10 @@ function calculateProduct(event) {
   let multiplicationAnswer =
     Number(multiplication1.value) * Number(multiplication2.value);
   let product = document.querySelector("#product");
-  product.value = multiplicationAnswer;
 
-  if (multiplication1.value == "" || multiplication2.value == "") {
+  if (multiplication1.value.length >= 1 && multiplication2.value.length >= 1) {
+    product.value = multiplicationAnswer;
+  } else if (multiplication1.value == "" || multiplication2.value == "") {
     alert("Please enter the missing value.");
   }
 }
@@ -58,9 +61,10 @@ function calculateQuotient(event) {
   let division2 = document.querySelector("#division2");
   let divisionAnswer = Number(division1.value) / Number(division2.value);
   let quotient = document.querySelector("#quotient");
-  quotient.value = divisionAnswer;
 
-  if (division1.value == "" || division2.value == "") {
+  if (division1.value.length >= 1 && division2.value.length >= 1) {
+    quotient.value = divisionAnswer;
+  } else if (division1.value == "" || division2.value == "") {
     alert("Please enter the missing value.");
   }
 }
