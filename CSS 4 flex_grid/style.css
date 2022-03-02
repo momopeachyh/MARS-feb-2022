@@ -8,13 +8,13 @@
   margin: 15px auto;
 }
 
-.yellow,
-.red {
+div.row-2 > div {
   width: 30%;
 }
 
-.number-grid {
-  display: grid;
+.yellow,
+.red {
+  width: 30%;
 }
 
 .numbers,
@@ -22,6 +22,11 @@
   background-color: white;
   margin: 5px;
   padding: 10px 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
 }
 
 .green {
@@ -32,18 +37,12 @@
   background-color: #ffffba;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-}
-
 .red {
   background-color: #ffb3ba;
 }
 
 .blue {
   background-color: #bbe1ff;
-  width: 30%;
 }
 
 .orange {
