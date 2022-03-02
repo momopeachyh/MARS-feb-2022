@@ -7,9 +7,11 @@ function guessResponse(event) {
   guessCount++;
   if (guessInput.value == luckyNumber) {
     alert(`Correct! You guessed the lucky number in ${guessCount} tries!`);
+    guessCount = 0;
   } else {
     alert("Incorrect. Please guess again.");
   }
+  guessInput.value = "";
 }
 
 let checkButton = document.querySelector("#checkButton");
