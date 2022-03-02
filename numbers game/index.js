@@ -8,6 +8,8 @@ function guessResponse(event) {
   if (guessInput.value == luckyNumber) {
     alert(`Correct! You guessed the lucky number in ${guessCount} tries!`);
     guessCount = 0;
+  } else if (guessInput.value > 20) {
+    alert("Please guess between 0 and 20.");
   } else {
     alert("Incorrect. Please guess again.");
   }
