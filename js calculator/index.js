@@ -6,6 +6,10 @@ function calculateSum(event) {
   let additionAnswer = Number(addition1.value) + Number(addition2.value);
   let sum = document.querySelector("#sum");
   sum.value = additionAnswer;
+
+  if (addition1.value == "" || addition2.value == "") {
+    alert("Please enter the missing value.");
+  }
 }
 
 let additionEquals = document.querySelector("#additionEquals");
@@ -20,6 +24,10 @@ function calculateDifference(event) {
     Number(subtraction1.value) - Number(subtraction2.value);
   let difference = document.querySelector("#difference");
   difference.value = subtractionAnswer;
+
+  if (subtraction1.value == "" || subtraction2.value == "") {
+    alert("Please enter the missing value.");
+  }
 }
 
 let subtractionEquals = document.querySelector("#subtractionEquals");
@@ -34,6 +42,10 @@ function calculateProduct(event) {
     Number(multiplication1.value) * Number(multiplication2.value);
   let product = document.querySelector("#product");
   product.value = multiplicationAnswer;
+
+  if (multiplication1.value == "" || multiplication2.value == "") {
+    alert("Please enter the missing value.");
+  }
 }
 
 let multiplicationEquals = document.querySelector("#multiplicationEquals");
@@ -47,6 +59,10 @@ function calculateQuotient(event) {
   let divisionAnswer = Number(division1.value) / Number(division2.value);
   let quotient = document.querySelector("#quotient");
   quotient.value = divisionAnswer;
+
+  if (division1.value == "" || division2.value == "") {
+    alert("Please enter the missing value.");
+  }
 }
 
 let divisionEquals = document.querySelector("#divisionEquals");
