@@ -1,11 +1,14 @@
+/* Very messy CSS. Not responsive */
+
 .color-container,
-.row-2 {
+.row-2,
+.row-3 {
   display: flex;
   justify-content: space-around;
 }
 
 .row-2 {
-  margin: 15px auto;
+  margin: 15px auto 0px;
 }
 
 div.row-2 > div {
@@ -45,6 +48,14 @@ div.row-2 > div {
   background-color: #bbe1ff;
 }
 
+.blue-2 {
+  width: 225px;
+  position: relative;
+  right: 3px;
+}
+
 .orange {
   background-color: #ffdfba;
+  margin-top: 15px;
+  width: 65%;
 }
