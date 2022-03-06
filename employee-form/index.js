@@ -36,6 +36,6 @@ function createObject() {
 // Alert for form submission
 function handleClick(event) {
   event.preventDefault();
-  // alert("Thank you. The form has been submitted.");
+  alert("Thank you. The form has been submitted.");
   createObject();
 }
