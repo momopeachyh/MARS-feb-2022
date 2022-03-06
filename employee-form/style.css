@@ -5,3 +5,7 @@ div {
 .hide {
   display: none;
 }
+
+.display {
+  display: contents;
+}

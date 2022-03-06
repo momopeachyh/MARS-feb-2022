@@ -7,20 +7,35 @@ const title = document.querySelector("#title");
 
 button.addEventListener("click", handleClick);
 
-// Create new object from form data
-function createObject(object) {
+function createObject() {
+  // Create new object from form data
   const employee = new Object();
   employee.name = name.value;
   employee.id = id.value;
   employee.startDate = startDate.value;
   employee.hours = hours.value;
   employee.title = title.value;
-  console.log(employee);
+
+  // Calculate salary
+  let rate = null;
+  if (employee.title === "manager") {
+    rate = 90;
+  } else if (employee.title === "consultant") {
+    rate = 70;
+  } else if (employee.title === "trainee") {
+    rate = 45;
+  }
+  const salary = employee.hours * rate;
+
+  // Display salary
+  const salaryAlert = document.querySelector("#salaryAlert");
+  salaryAlert.innerHTML = `${employee.name}, who is a ${employee.title}, will earn $${salary}.`;
+  salaryAlert.classList.add("display");
 }
 
 // Alert for form submission
 function handleClick(event) {
   event.preventDefault();
-  alert("Thank you. The form has been submitted.");
+  // alert("Thank you. The form has been submitted.");
   createObject();
 }
