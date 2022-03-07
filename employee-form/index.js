@@ -33,9 +33,15 @@ function createObject() {
   salaryAlert.classList.add("display");
 }
 
-// Alert for form submission
+// Confirm form submission
+function confirmSubmission() {
+  const formContainer = document.querySelector("#formContainer");
+  formContainer.innerHTML = `The form has been submitted.`;
+}
+
+// Handle click event
 function handleClick(event) {
   event.preventDefault();
-  alert("Thank you. The form has been submitted.");
+  confirmSubmission();
   createObject();
 }
