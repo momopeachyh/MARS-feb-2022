@@ -9,7 +9,7 @@ button.addEventListener("click", handleClick);
 
 function createObject() {
   // Create new object from form data
-  const employee = new Object();
+  let employee = new Object();
   employee.name = name.value;
   employee.id = id.value;
   employee.startDate = startDate.value;
@@ -31,6 +31,9 @@ function createObject() {
   const salaryAlert = document.querySelector("#salaryAlert");
   salaryAlert.innerHTML = `${employee.name}, who is a ${employee.title}, will earn $${salary}.`;
   salaryAlert.classList.add("display");
+
+  // Clear data after submission
+  employee = {};
 }
 
 // Confirm form submission
