@@ -5,7 +5,7 @@ const startDate = document.querySelector("#date");
 const hours = document.querySelector("#hours");
 const title = document.querySelector("#title");
 
-button.addEventListener("submit", handleClick);
+button.addEventListener("click", handleClick);
 
 function handleData() {
   // Create new object from form data
