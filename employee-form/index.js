@@ -1,4 +1,4 @@
-const button = document.querySelector("#submitButton");
+const button = document.querySelector("button");
 const name = document.querySelector("#name");
 const id = document.querySelector("#empId");
 const startDate = document.querySelector("#date");
