@@ -5,7 +5,7 @@ const startDate = document.querySelector("#date");
 const hours = document.querySelector("#hours");
 const title = document.querySelector("#title");
 
-button.addEventListener("click", handleClick);
+button.addEventListener("submit", handleClick);
 
 function handleData() {
   // Create new object from form data
@@ -15,6 +15,7 @@ function handleData() {
   employee.startDate = startDate.value;
   employee.hours = hours.value;
   employee.title = title.value;
+  console.log(employee);
 
   // Calculate salary
   let rate = null;
