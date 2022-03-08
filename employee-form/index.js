@@ -7,7 +7,7 @@ const title = document.querySelector("#title");
 
 button.addEventListener("click", handleClick);
 
-function createObject() {
+function handleData() {
   // Create new object from form data
   let employee = new Object();
   employee.name = name.value;
@@ -46,5 +46,5 @@ function confirmSubmission() {
 function handleClick(event) {
   event.preventDefault();
   confirmSubmission();
-  createObject();
+  handleData();
 }
