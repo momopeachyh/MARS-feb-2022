@@ -1,0 +1,11 @@
+div {
+  margin-top: 15px;
+}
+
+.hide {
+  display: none;
+}
+
+.display {
+  display: contents;
+}
