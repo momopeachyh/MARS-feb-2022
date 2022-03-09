@@ -44,19 +44,44 @@ function handleData() {
     get name() {
       return this.#name;
     }
+    // set name(name) {
+    //   if (name.value == "") {
+    //     throw new Error("Name field cannot be empty.");
+    //   }
+    // }
     get id() {
       return this.#id;
     }
+    //   set id(id) {
+    // if (name.value == "") {
+    //   throw new Error("ID field cannot be empty.");
+    // }
+    //   }
     get startDate() {
       return this.#startDate;
     }
+    //     set startDate(startDate) {
+    //   if (startDate.value == "") {
+    //     throw new Error("Start date field cannot be empty.");
+    //   }
+    // }
     get hours() {
       return this.#hours;
     }
+    //     set hours(hours) {
+    //   if (hours.value == "") {
+    //     throw new Error("Hours field cannot be empty.");
+    //   }
+    // }
     get title() {
       return this.#title;
     }
   }
+  //       set title(title) {
+  //     if (title.value == "") {
+  //       throw new Error("Title field cannot be empty.");
+  //     }
+  // }
 
   let employee = new Employee(name, id, startDate, hours, title);
 
