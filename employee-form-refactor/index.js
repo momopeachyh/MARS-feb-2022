@@ -1,3 +1,4 @@
+// Declare variables
 const button = document.querySelector("#button");
 button.addEventListener("click", handleClick);
 
@@ -7,6 +8,7 @@ let startDate = document.querySelector("#date");
 let hours = document.querySelector("#hours");
 let title = document.querySelector("#title");
 
+// Set max date to today's date
 setMaxDate();
 
 function setMaxDate() {
@@ -25,6 +27,7 @@ function setMaxDate() {
 }
 
 function handleData() {
+  // Create class from form input data
   class Employee {
     #name;
     #id;
@@ -77,7 +80,7 @@ function handleData() {
   employee = {};
 }
 
-//   Confirm form submission
+// Confirm form submission
 function confirmSubmission() {
   const formContainer = document.querySelector("#formContainer");
   formContainer.innerHTML = `The form has been submitted.`;
