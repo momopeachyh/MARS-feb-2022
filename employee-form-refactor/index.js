@@ -1,13 +1,30 @@
 const button = document.querySelector("#button");
 button.addEventListener("click", handleClick);
 
-function handleData() {
-  let name = document.querySelector("#name").value;
-  let id = document.querySelector("#empId").value;
-  let startDate = document.querySelector("#date").value;
-  let hours = document.querySelector("#hours").value;
-  let title = document.querySelector("#title").value;
+let name = document.querySelector("#name");
+let id = document.querySelector("#empId");
+let startDate = document.querySelector("#date");
+let hours = document.querySelector("#hours");
+let title = document.querySelector("#title");
 
+setMaxDate();
+
+function setMaxDate() {
+  const now = new Date();
+  let year = String(now.getFullYear());
+  let month = String(now.getMonth() + 1);
+  if (month < 10) {
+    month = `0${month}`;
+  }
+  let date = String(now.getDate());
+  if (date < 10) {
+    date = `0${date}`;
+  }
+  let maxDate = `${year}-${month}-${date}`;
+  startDate.setAttribute("max", maxDate);
+}
+
+function handleData() {
   class Employee {
     #name;
     #id;
@@ -15,11 +32,11 @@ function handleData() {
     #hours;
     #title;
     constructor(name, id, startDate, hours, title) {
-      this.#name = name;
-      this.#id = id;
-      this.#startDate = startDate;
-      this.#hours = hours;
-      this.#title = title;
+      this.#name = name.value;
+      this.#id = id.value;
+      this.#startDate = startDate.value;
+      this.#hours = hours.value;
+      this.#title = title.value;
     }
     get name() {
       return this.#name;
