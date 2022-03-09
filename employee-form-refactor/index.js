@@ -1,21 +1,44 @@
-const button = document.querySelector("#submitButton");
-const name = document.querySelector("#name");
-const id = document.querySelector("#empId");
-const startDate = document.querySelector("#date");
-const hours = document.querySelector("#hours");
-const title = document.querySelector("#title");
-
+const button = document.querySelector("#button");
 button.addEventListener("click", handleClick);
 
 function handleData() {
-  // Create new object from form data
-  let employee = new Object();
-  employee.name = name.value;
-  employee.id = id.value;
-  employee.startDate = startDate.value;
-  employee.hours = hours.value;
-  employee.title = title.value;
-  console.log(employee);
+  let name = document.querySelector("#name").value;
+  let id = document.querySelector("#empId").value;
+  let startDate = document.querySelector("#date").value;
+  let hours = document.querySelector("#hours").value;
+  let title = document.querySelector("#title").value;
+
+  class Employee {
+    #name;
+    #id;
+    #startDate;
+    #hours;
+    #title;
+    constructor(name, id, startDate, hours, title) {
+      this.#name = name;
+      this.#id = id;
+      this.#startDate = startDate;
+      this.#hours = hours;
+      this.#title = title;
+    }
+    get name() {
+      return this.#name;
+    }
+    get id() {
+      return this.#id;
+    }
+    get startDate() {
+      return this.#startDate;
+    }
+    get hours() {
+      return this.#hours;
+    }
+    get title() {
+      return this.#title;
+    }
+  }
+
+  let employee = new Employee(name, id, startDate, hours, title);
 
   // Calculate salary
   let rate = null;
@@ -37,7 +60,7 @@ function handleData() {
   employee = {};
 }
 
-// Confirm form submission
+//   Confirm form submission
 function confirmSubmission() {
   const formContainer = document.querySelector("#formContainer");
   formContainer.innerHTML = `The form has been submitted.`;
