@@ -69,6 +69,6 @@ function confirmSubmission() {
 // Handle click event
 function handleClick(event) {
   event.preventDefault();
-  confirmSubmission();
   handleData();
+  confirmSubmission();
 }
