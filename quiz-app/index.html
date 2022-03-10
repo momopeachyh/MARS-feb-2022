@@ -14,8 +14,9 @@
 <body>
   <div class="container">
     <h1 class="header">German Vocabulary Quiz: Animal Edition</h1>
-    <div class="question card">
-      <h3 class="question-text">How do you say "the squirrel" in German?</h3>
+
+    <div class="question card" id="questionCard">
+      <h3 class="question-text">1. How do you say "the squirrel" in German?</h3>
       <div class="form-check">
         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
         <label class="form-check-label" for="flexRadioDefault1">
@@ -29,9 +30,42 @@
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+        <input class="form-check-input correct" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
         <label class="form-check-label" for="flexRadioDefault3">
           das Eichhörnchen
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+        <label class="form-check-label" for="flexRadioDefault4">
+          die Ente
+        </label>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"><button class="btn btn-primary" id="button"><i class="bi bi-arrow-right"></i></button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="question card">
+      <h3 class="question-text">How do you say "the horse" in German?</h3>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          das Pferd
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+          der Hirsch
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+        <label class="form-check-label" for="flexRadioDefault3">
+          die Spinne
         </label>
       </div>
       <div class="form-check">
@@ -45,11 +79,13 @@
           <div class="col"></div>
           <div class="col"><button class="btn btn-primary"><i class="bi bi-arrow-right"></i></button></div>
         </div>
-
       </div>
+    </div>
 
 
-      <script src="index.js"></script>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 
 </html>
