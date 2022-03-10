@@ -1,3 +1,4 @@
+// Destructure array
 function getItem() {
   return [
     { item: "PS4 Pro", stock: 3, original: 399.99 },
@@ -9,6 +10,8 @@ function getItem() {
 }
 
 const [item1, item2, item3, item4, item5] = getItem();
+
+// Iterate objects through function to calculate discount and total inventory
 const array = [item1, item2, item3, item4, item5];
 
 function handleItem(item) {
@@ -28,4 +31,6 @@ function handleItem(item) {
   };
 }
 let newArray = array.map(handleItem);
+
+// Display new inventory array
 console.log(newArray);
