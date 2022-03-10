@@ -8,13 +8,14 @@ function getItem() {
   ];
 }
 
-let [item1, item2, item3, item4, item5] = getItem();
+const [item1, item2, item3, item4, item5] = getItem();
+const array = [item1, item2, item3, item4, item5];
 
-function handleItem1(item1) {
-  const newItem = item1.item;
-  const newStock = item1.stock;
-  const newOriginal = item1.original;
-  const newDiscount = item1.discount || 0;
+function handleItem(item) {
+  const newItem = item.item;
+  const newStock = item.stock;
+  const newOriginal = item.original;
+  const newDiscount = item.discount || 0;
   const newSale = newOriginal - newOriginal * newDiscount;
   const newTotal = newSale * newStock;
 
@@ -26,3 +27,5 @@ function handleItem1(item1) {
     total: newTotal,
   };
 }
+let newArray = array.map(handleItem);
+console.log(newArray);
