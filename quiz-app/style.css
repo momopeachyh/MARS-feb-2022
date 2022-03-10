@@ -1,0 +1,19 @@
+.container {
+  margin-top: 40px;
+}
+
+.header {
+  font-size: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.card {
+  margin: 5% auto;
+  max-width: 350px;
+  padding: 25px 40px;
+}
+
+button {
+  margin: 20px auto 10px;
+}
