@@ -14,8 +14,20 @@
   padding: 25px 40px;
 }
 
+.correct {
+  border: 2px solid #80cc92;
+}
+
+.incorrect {
+  border: 2px solid #f25457;
+}
+
 .question-text {
   margin-bottom: 20px;
+}
+
+.answerFeedback {
+  margin-top: 20px;
 }
 
 button {

@@ -15,81 +15,49 @@
   <div class="container">
     <h1 class="header">German Vocabulary Quiz: Animal Edition</h1>
 
-    <div class="question card">
+    <div class="question card" id="card">
       <h3 class="question-text">1. How do you say "the squirrel" in German?</h3>
-      <form>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">die Katze</label>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">der Hund</label>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">das Eichhörnchen</label>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">die Ente</label>
-            </div>
-          </li>
-        </ul>
-        <div class="row">
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"><button class="btn btn-primary" id="button"><i class="bi bi-arrow-right"></i></button></div>
+      <select class="form-select" multiple aria-label="multiple select example" id="formSelect" required>
+        <option value="incorrect">die Katze</option>
+        <option value="incorrect">das Pferd</option>
+        <option value="incorrect">der Hund</option>
+        <option value="correct">das Eichhörnchen</option>
+      </select>
+      <div class="row">
+        <div class="col answerFeedback">
+          <p class="hidden" id="correctFeedback">Correct!</p>
+          <p class="hidden" id="incorrectFeedback">Inorrect</p>
         </div>
-      </form>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"><button type="submit" class="btn btn-primary" id="button" onclick="handleClick()"><i
+              class="bi bi-arrow-right"></i></button>
+        </div>
+      </div>
     </div>
-
-    <div class="question card">
+    <!-- 
+    <div class="question card" id="card">
       <h3 class="question-text">2. How do you say "the horse" in German?</h3>
-      <form>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">der Hirsch</label>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">das Pferd</label>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">die Ente</label>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">der Schlange</label>
-            </div>
-          </li>
-        </ul>
-        <div class="row">
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"><button class="btn btn-primary" id="button"><i class="bi bi-arrow-right"></i></button></div>
+      <select class="form-select" multiple aria-label="multiple select example" id="formSelect" required>
+        <option value="">das Pferd</option>
+        <option value="">der Hirsch</option>
+        <option value="">der Hund</option>
+        <option value="correct">die Spinne</option>
+      </select>
+      <div class="row">
+        <div class="col answerFeedback">
+          <p class="hidden" id="correctFeedback">Correct!</p>
+          <p class="hidden" id="incorrectFeedback">Inorrect</p>
         </div>
-      </form>
-    </div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"><button class="btn btn-primary" id="button"><i class="bi bi-arrow-right"></i></button>
+        </div>
+      </div>
+    </div> -->
+
+
+
 
 
   </div>
