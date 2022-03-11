@@ -54,3 +54,31 @@ function showFeedback2() {
 function handleClick2() {
   showFeedback2();
 }
+
+// Question 3
+const card3 = document.querySelector("#card3");
+
+function showFeedback3() {
+  const questionGuess = document.querySelector("#formSelect3").value;
+  const correctAlert = document.querySelector("#correctFeedback3");
+  const incorrectAlert = document.querySelector("#incorrectFeedback3");
+
+  // Display "correct" feedback and change border color to green
+  if (questionGuess === "correct") {
+    card3.classList.remove("incorrect");
+    card3.classList.add("correct");
+    correctAlert.classList.remove("hidden");
+    incorrectAlert.classList.add("hidden");
+
+    // Display "incorrect" feedback and change border color to red
+  } else if (questionGuess === "incorrect") {
+    card3.classList.remove("correct");
+    card3.classList.add("incorrect");
+    incorrectAlert.classList.remove("hidden");
+    correctAlert.classList.add("hidden");
+  }
+}
+
+function handleClick3() {
+  showFeedback3();
+}
