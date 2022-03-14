@@ -15,71 +15,31 @@
   <div class="container">
     <h1 class="header">German Vocabulary Quiz: Animal Edition</h1>
 
-    <div class="question card" id="card1">
-      <h3 class="question-text">1. How do you say "the squirrel" in German?</h3>
-      <select class="form-select" multiple aria-label="multiple select example" id="formSelect1" required>
-        <option value="incorrect">die Katze</option>
-        <option value="incorrect">das Pferd</option>
-        <option value="incorrect">der Hund</option>
-        <option value="correct">das Eichhörnchen</option>
-      </select>
-      <div class="row">
-        <div class="col answerFeedback">
-          <p class="hidden" id="correctFeedback1">Correct!</p>
-          <p class="hidden" id="incorrectFeedback1">Inorrect</p>
-        </div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"><button type="submit" class="btn btn-primary" id="btn1" onclick="handleClick1()"><i
-              class="bi bi-arrow-right"></i></button>
+
+    <div class="question card" id="questContainer">
+      <h3 class="question-text" id="questText"></h3>
+      <div class="answer-div" id="formSelect">
+        <div class="row">
+          <button class="btn" id="a"></button>
+          <button class="btn" id="b"></button>
+          <button class="btn" id="c"></button>
+          <button class="btn" id="d"></button>
         </div>
       </div>
-    </div>
-
-    <div class="question card" id="card2">
-      <h3 class="question-text">2. How do you say "the horse" in German?</h3>
-      <select class="form-select" multiple aria-label="multiple select example" id="formSelect2" required>
-        <option value="correct">das Pferd</option>
-        <option value="incorrect">der Hirsch</option>
-        <option value="incorrect">der Hund</option>
-        <option value="incorrect">die Spinne</option>
-      </select>
       <div class="row">
         <div class="col answerFeedback">
-          <p class="hidden" id="correctFeedback2">Correct!</p>
-          <p class="hidden" id="incorrectFeedback2">Inorrect</p>
+          <p class="hidden" id="correctFeedback">Correct!</p>
+          <p class="hidden" id="incorrectFeedback">Inorrect</p>
         </div>
         <div class="col"></div>
         <div class="col"></div>
-        <div class="col"><button class="btn btn-primary" id="btn2" onclick="handleClick2()"><i
-              class="bi bi-arrow-right"></i></button>
-        </div>
-      </div>
-    </div>
-
-    <div class="question card" id="card3">
-      <h3 class="question-text">3. How do you say "the cat" in German?</h3>
-      <select class="form-select" multiple aria-label="multiple select example" id="formSelect3" required>
-        <option value="incorrect">die Spinne</option>
-        <option value="correct">die Katze</option>
-        <option value="incorrect">der Hirsch</option>
-        <option value="incorrect">die Ente</option>
-      </select>
-      <div class="row">
-        <div class="col answerFeedback">
-          <p class="hidden" id="correctFeedback3">Correct!</p>
-          <p class="hidden" id="incorrectFeedback3">Inorrect</p>
-        </div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"><button class="btn btn-primary" id="btn2" onclick="handleClick3()"><i
-              class="bi bi-arrow-right"></i></button>
+        <div class="col"><button type="submit" class="btn btn-primary" id="btn1"
+            onclick="showQuestion(questionList[counter])"><i class="bi bi-arrow-right"></i></button>
         </div>
       </div>
+
+
     </div>
-
-
-
 
 
   </div>
