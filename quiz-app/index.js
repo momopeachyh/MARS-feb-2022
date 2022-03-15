@@ -29,7 +29,7 @@ const questionList = [
   {
     questNo: 4,
     questText: "How do you say 'the spider' in German?",
-    a: "die spinne",
+    a: "die Spinne",
     b: "der Schlange",
     c: "die Fledermaus",
     d: "der Vogel",
@@ -56,8 +56,12 @@ const ansD = document.querySelector("#d");
 const questContainer = document.querySelector("#questContainer");
 const correctAlert = document.querySelector("#correctFeedback");
 const incorrectAlert = document.querySelector("#incorrectFeedback");
+const nextButton = document.querySelector("#nextButton");
+const endButton = document.querySelector("#endButton");
+const scoreAlert = document.querySelector("#score");
 
 let counter = 0;
+let score = 0;
 
 function showQuestion(question) {
   placeholderQuest.innerHTML = `${question.questNo}. ${question.questText}`;
@@ -75,16 +79,21 @@ function showQuestion(question) {
   // Increment counter
   counter++;
 
+  // Increment score when correct answer guessed
+  function correctAnsClicked() {
+    score++;
+  }
+
   function showFeedback() {
     const ansCorrect = question.correct;
     const ansGuessed = this.value;
-
     // Show feedback and change styling
     if (ansGuessed == ansCorrect) {
       correctAlert.classList.remove("hidden");
       incorrectAlert.classList.add("hidden");
       questContainer.classList.remove("incorrect");
       questContainer.classList.add("correct");
+      correctAnsClicked();
     } else {
       incorrectAlert.classList.remove("hidden");
       correctAlert.classList.add("hidden");
@@ -107,6 +116,19 @@ function showQuestion(question) {
   ansB.addEventListener("click", showFeedback);
   ansC.addEventListener("click", showFeedback);
   ansD.addEventListener("click", showFeedback);
+
+  // Change "next button" to "end quiz button" on last question
+  if (counter === 5) {
+    endButton.classList.remove("hidden");
+    nextButton.classList.add("hidden");
+  }
+
+  return score;
+}
+
+function finishQuiz() {
+  scoreAlert.classList.remove("hidden");
+  scoreAlert.innerHTML = `Your score was ${score}/5.`;
 }
 
 function startQuiz() {

@@ -20,27 +20,29 @@
       <h3 class="question-text" id="questText"></h3>
       <div class="answer-div" id="formSelect">
         <div class="row">
-          <button class="btn" id="a"></button>
-          <button class="btn" id="b"></button>
-          <button class="btn" id="c"></button>
-          <button class="btn" id="d"></button>
+          <button class="btn ans" id="a"></button>
+          <button class="btn ans" id="b"></button>
+          <button class="btn ans" id="c"></button>
+          <button class="btn ans" id="d"></button>
         </div>
       </div>
       <div class="row">
-        <div class="col answerFeedback">
-          <p class="hidden" id="correctFeedback">Correct!</p>
-          <p class="hidden" id="incorrectFeedback">Inorrect</p>
-        </div>
         <div class="col"></div>
         <div class="col"></div>
-        <div class="col"><button type="submit" class="btn btn-primary" id="btn1"
+        <div class="col"><button type="submit" class="btn btn-primary" id="nextButton"
             onclick="showQuestion(questionList[counter])"><i class="bi bi-arrow-right"></i></button>
+          <button type="submit" class="btn btn-primary hidden" id="endButton" onclick="finishQuiz()">Finish</button>
         </div>
       </div>
 
 
     </div>
 
+    <div class="col answerFeedback">
+      <p class="hidden" id="correctFeedback">Correct!</p>
+      <p class="hidden" id="incorrectFeedback">Incorrect</p>
+      <p class="hidden" id="score">Score here</p>
+    </div>
 
   </div>
 

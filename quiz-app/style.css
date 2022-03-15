@@ -9,9 +9,13 @@
 }
 
 .card {
-  margin: 5% auto;
+  margin: 5% auto 2%;
   max-width: 350px;
   padding: 25px 40px;
+}
+
+.ans {
+  border: 1px solid gray;
 }
 
 .correct {
@@ -27,7 +31,8 @@
 }
 
 .answerFeedback {
-  margin-top: 20px;
+  font-size: 24px;
+  text-align: center;
 }
 
 button {
