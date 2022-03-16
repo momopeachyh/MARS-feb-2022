@@ -1,11 +1,10 @@
 import React from "react";
+import "./Operator.css";
 
 class Addition extends React.Component {
   constructor() {
     super();
     this.state = {
-      // num1: "",
-      // num2: "",
       sum: "",
     };
   }
@@ -13,17 +12,17 @@ class Addition extends React.Component {
     return (
       <div className="Addition">
         <form>
-          <input type="number" id="add1" onChange={this.getNumbers}></input>
-          <button>+</button>
-          <input type="number" id="add2" onChange={this.getNumbers}></input>
-          <input type="submit" value="=" onClick={this.sayHi}></input>
+          <input type="number" id="add1" onChange={this.calcSum}></input>
+          <button className="operator">+</button>
+          <input type="number" id="add2" onChange={this.calcSum}></input>
+          <input type="submit" value="="></input>
           <input type="text" value={this.state.sum}></input>
         </form>
       </div>
     );
   }
 
-  getNumbers = () => {
+  calcSum = () => {
     let add1 = document.getElementById("add1").value;
     let add2 = document.getElementById("add2").value;
     let sum = Number(add1) + Number(add2);
