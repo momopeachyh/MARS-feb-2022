@@ -17,7 +17,7 @@ class Multiplication extends React.Component {
             id="multiply1"
             onChange={this.calcProduct}
           ></input>
-          <button className="operator">*</button>
+          <button className="operator">x</button>
           <input
             type="number"
             id="multiply2"
