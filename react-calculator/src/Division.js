@@ -17,13 +17,13 @@ class Division extends React.Component {
             id="divide1"
             onChange={this.calcQuotient}
           ></input>
-          <button className="operator">÷</button>
+          <button className="button">÷</button>
           <input
             type="number"
             id="divide2"
             onChange={this.calcQuotient}
           ></input>
-          <input type="submit" value="="></input>
+          <input type="submit" value="=" className="button"></input>
           <input type="text" value={this.state.quotient}></input>
         </form>
       </div>

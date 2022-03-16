@@ -17,13 +17,13 @@ class Multiplication extends React.Component {
             id="multiply1"
             onChange={this.calcProduct}
           ></input>
-          <button className="operator">x</button>
+          <button className="button">x</button>
           <input
             type="number"
             id="multiply2"
             onChange={this.calcProduct}
           ></input>
-          <input type="submit" value="="></input>
+          <input type="submit" value="=" className="button"></input>
           <input type="text" value={this.state.product}></input>
         </form>
       </div>

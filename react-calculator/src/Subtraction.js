@@ -17,13 +17,13 @@ class Subtraction extends React.Component {
             id="subtract1"
             onChange={this.calcDifference}
           ></input>
-          <button className="operator">-</button>
+          <button className="button">-</button>
           <input
             type="number"
             id="subtract2"
             onChange={this.calcDifference}
           ></input>
-          <input type="submit" value="="></input>
+          <input type="submit" value="=" className="button"></input>
           <input type="text" value={this.state.difference}></input>
         </form>
       </div>

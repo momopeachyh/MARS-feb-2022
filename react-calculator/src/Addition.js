@@ -13,9 +13,9 @@ class Addition extends React.Component {
       <div className="Addition">
         <form>
           <input type="number" id="add1" onChange={this.calcSum}></input>
-          <button className="operator">+</button>
+          <button className="button">+</button>
           <input type="number" id="add2" onChange={this.calcSum}></input>
-          <input type="submit" value="="></input>
+          <input type="submit" value="=" className="button"></input>
           <input type="text" value={this.state.sum}></input>
         </form>
       </div>

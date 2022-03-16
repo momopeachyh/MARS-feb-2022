@@ -2,6 +2,9 @@ form {
   font-size: 1.5em;
 }
 
-button {
+.button {
+  background-color: #63c0cc;
+  border: 1px gray solid;
+  padding: 2px;
   width: 25px;
 }
